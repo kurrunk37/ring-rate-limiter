@@ -26,7 +26,7 @@ To install, add the following to your project `:dependencies`:
     :interval 60 ; required (s)
     :max-in-interval 3 ; required
     :key-in-request [:headers "x-forwarded-for"] ; default [:remote-addr]
-    :debug ; default false
-    :fail-response ; default "Too Many Requests"
+    :debug true ; default false
+    :fail-response "error" ; default "Too Many Requests"
     ))
 ```
