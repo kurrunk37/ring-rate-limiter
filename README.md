@@ -7,7 +7,7 @@ Standard Ring middleware functions , lightweight, efficient, Rate limiter.
 To install, add the following to your project `:dependencies`:
 
 ```clojure
-[huzhengquan/ring-rate-limiter "0.1.0"]
+[huzhengquan/ring-rate-limiter "0.1.1"]
 ```
 
 ## Usage

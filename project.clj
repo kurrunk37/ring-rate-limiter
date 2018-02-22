@@ -1,4 +1,4 @@
-(defproject huzhengquan/ring-rate-limiter "0.1.0"
+(defproject huzhengquan/ring-rate-limiter "0.1.1"
   :description "ring middleware, rate limiter"
   :url "https://github.com/huzhengquan/ring-rate-limiter"
   :license {:name "Eclipse Public License"
