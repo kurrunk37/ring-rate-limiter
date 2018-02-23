@@ -22,5 +22,7 @@
           (println :rate-limiter :debug :rl-key rl-key :now-key now-key :count (get @user-counter rl-key)))
         (if (> max-in-interval (get @user-counter rl-key 0))
           (handler request)
-          {:status 429 :body fail-response}))
+          (do 
+            (when debug (println :rate-limiter :debug :too-many-requests :rl-key rl-key))
+            {:status 429 :body fail-response})))
       (handler request))))
